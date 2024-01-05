@@ -1,7 +1,14 @@
 # UBC-Ovarian-Cancer-Subtype-Classification-and-Outlier-Detection
 UBC-OCEAN 4th place solution
 
-1. Generate TFRecords from thumbnail images & supplimental mask data
+## Environment
+Use [TPU Kaggle Docker](https://gcr.io/kaggle-gpu-images/python-tpuvm@sha256:ac32fbff8fdb4b3208a99ed054416c5c31500e0ba60838044cc368869b9524a8).
+
+## Usage
+0. All trained model weights should be placed in `weights` folder. The main competition data, supplemental mask data, thumbnail tfrecords, wsi tfrecords, and cropped tfrecords
+   should be placed in `/data/ubcocean`, `/data/supplementalmasks`, `/data/thumbnailmasks`, `/data/wsimasks`, and `/data/croppedtfrecords` respectively.
+   
+2. Generate TFRecords from thumbnail images & supplimental mask data
 ```bash
 $ python thumbnailmasks.py
 ```
@@ -45,3 +52,5 @@ $ python model7.py
 ```bash
 $ python inference.py
 ```
+## License
+Apache-2.0

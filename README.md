@@ -52,5 +52,7 @@ $ python model7.py
 ```bash
 $ python inference.py
 ```
+Kaggle inference notebook can be found [here](https://www.kaggle.com/code/mmelahi/ubc-ocean-final-inference).
+
 ## License
 Apache-2.0

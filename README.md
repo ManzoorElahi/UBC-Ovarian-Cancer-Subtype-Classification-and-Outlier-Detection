@@ -22,7 +22,7 @@ Datageneration can be skipped by using the below tfrecords.
   
 
 ## Usage
-0. All trained model weights should be placed in `weights` folder. The main competition data, supplemental mask data, thumbnail tfrecords, thumbnail small tfrecords, wsi tfrecords, and cropped tfrecords should be placed in `/data/ubcocean`, `/data/supplementalmasks`, `/data/thumbnailmasks`, /data/thumbnailmaskssmall`, `/data/wsimasks`, and `/data/croppedtfrecords` respectively.
+0. All trained model weights should be placed in `weights` folder. The main competition data, supplemental mask data, thumbnail tfrecords, thumbnail small tfrecords, wsi tfrecords, and cropped tfrecords should be placed in `/data/ubcocean`, `/data/supplementalmasks`, `/data/thumbnailmasks`, `/data/thumbnailmaskssmall`, `/data/wsimasks`, and `/data/croppedtfrecords` respectively.
    
 2. Generate TFRecords from thumbnail images & supplimental mask data
 ```bash

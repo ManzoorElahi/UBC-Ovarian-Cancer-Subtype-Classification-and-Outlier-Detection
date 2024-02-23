@@ -16,6 +16,7 @@ Datageneration can be skipped by using the below tfrecords.
   [4](https://www.kaggle.com/datasets/mmelahi/ubc-ocean-wsi-masks-tfrecords-512-3-0)
   [5](https://www.kaggle.com/datasets/mmelahi/ubc-ocean-wsi-masks-tfrecords-512-4-0)
 
+- Add [tfrecords](https://www.kaggle.com/datasets/mmelahi/ubc-ocean-thumbnails-masks-tfrecords-512) in `/data/thumbnailmaskssmall`
 - Add [tfrecords](https://www.kaggle.com/code/mmelahi/ubc-ocean-thumbnails-masks-tfrecords-1) in `/data/thumbnailmasks`
 - Add [tfrecords](https://www.kaggle.com/datasets/mmelahi/ubc-ocean-tfrecords-768-2) in `/data/croppedtfrecords`
   
@@ -34,6 +35,7 @@ $ python wsimasks.py
 ```
 3. Train segmentation models.
 ```bash
+$ python convnextbasefpn25epochs.py
 $ python convnextbasefpn.py
 $ python convnextsmallfpn.py
 $ python hornetbasefpn.py
@@ -51,6 +53,7 @@ $ python model15.py
 4. Use the segmentation model to generate cropped images
 ```bash
 $ python gencroppeddata.py
+$ python noncancerousdata.py
 $ python croppedtfrecords.py
 ```
 5. Train classification models
